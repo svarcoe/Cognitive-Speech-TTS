@@ -82,7 +82,7 @@ public class MainActivity extends ActionBarActivity {
             findViewById(R.id.stop_btn).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    m_syn.stopSound();
+                    //m_syn.stopSound();
                 }
             });
 
