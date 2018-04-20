@@ -121,12 +121,12 @@ public class Synthesizer {
         return SpeakSSML(ssml);
     }
 
-    public void SpeakToAudio(String text) {
-        playSound(Speak(text), null);
+    public void SpeakToAudio(String text, final Runnable callback) {
+        playSound(Speak(text), callback);
     }
 
-    public void SpeakSSMLToAudio(String ssml) {
-        playSound(SpeakSSML(ssml), null);
+    public void SpeakSSMLToAudio(String ssml, final Runnable callback) {
+        playSound(SpeakSSML(ssml), callback);
     }
 
     public byte[] SpeakSSML(String ssml) {
